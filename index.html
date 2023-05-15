@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <h1>Dessert</h1>
+            <ul>
+            <script>
+                Dessert = ["커피", "파이", "마카롱", "다쿠아즈", "소금빵", "캐러멜"]
+                var i = 0;
+                while(i < Dessert.length){
+                document.write('<li><a href="https://ko.wikipedia.org/wiki/'+ Dessert[i] + '">'+Dessert[i]+'</a></li>');
+                i = i + 1;
+                }
+                namelist = ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg"]
+                var i = 0;
+                while(i < namelist.length){
+                document.write('<li><img src="' + namelist[i]  + '">'+'</li>')
+                i = i + 1;
+                }
+            </script>
+            <h3>count</h3>
+            <script>
+                document.write(Dessert.length);
+            </script>
+            </ul>
+            <h3>push</h3>
+            <script>
+                Dessert.push("마카롱");
+                document.write(Dessert[2]);
+            </script>
+        </body>
+    </head>
+</html>
